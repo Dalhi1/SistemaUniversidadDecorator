@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GraduationCap, Book, User, FileText, Sparkles } from 'lucide-react';
 
-// ===== BRIDGE PATTERN =====
+// ===== patron bridge =====
 // Interfaz para materiales (implementación)
 interface IMaterial {
   obtenerDescripcion(): string;
@@ -21,7 +21,7 @@ class Libro implements IMaterial {
   }
 }
 
-// ===== DECORATOR PATTERN =====
+// ===== patron decorador =====
 // Clase Materia que contiene los materiales
 class Materia {
   clave: string;
@@ -186,9 +186,9 @@ interface CarreraUI {
 }
 
 const carreras: CarreraUI[] = [
-  { id: 'isc', clave: 'ISC', descripcion: 'Ingeniería en Sistemas Computacionales', icon: '💻' },
-  { id: 'inf', clave: 'INF', descripcion: 'Ingeniería en Informática', icon: '🔧' },
-  { id: 'icb', clave: 'ICB', descripcion: 'Ingeniería en Ciberseguridad', icon: '🔐' },
+  { id: 'isc', clave: 'ISC', descripcion: 'Ingeniería en Sistemas Computacionales'},
+  { id: 'inf', clave: 'INF', descripcion: 'Ingeniería en Informática'},
+  { id: 'icb', clave: 'ICB', descripcion: 'Ingeniería en Ciberseguridad' },
 ];
 
 export default function App() {
